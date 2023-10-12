@@ -1,0 +1,16 @@
+{
+  "name": "package-monorepo",
+  "version": "0.0.1",
+  "description": "A monorepo for building packages",
+  "main": "dist/index.js",
+  "author": "Maximilian Riley",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "dev-spaces/*"
+  ],
+  "scripts": {
+    "start:dnd-builder-dev-space": "yarn workspace dnd-builder-dev-space start"
+  }
+}
